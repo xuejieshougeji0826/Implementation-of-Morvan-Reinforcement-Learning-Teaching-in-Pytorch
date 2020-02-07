@@ -13,14 +13,13 @@ import time
 
 np.random.seed(2)
 
-Numbers_States=6
+Numbers_States=16
 Actions=['left','right']
 Epsilon=0.9
 Alpha=0.1
 Lambda=0.9
-Max_Episodes=20
-fps=0.3
-
+Max_Episodes=10
+fps=0.05
 
 
 def build_Q_table(numbers_of_states,numbers_of_acitons):
@@ -29,26 +28,32 @@ def build_Q_table(numbers_of_states,numbers_of_acitons):
 
 
 def choose_action(state,table):
-    actions=table[:state]
+    actions=table[state]
+    # print(actions)
     randon_number=np.random.uniform()
     # print("all:",actions.all())
     # print(actions.all()==0.)
     # # randon_number =0.91
     # # print(randon_number)
     # print("actions",actions)
-    if randon_number<Epsilon or actions.all():
+    # print(randon_number)
+    if randon_number>Epsilon or actions.all()==0:
         # print("random choice",np.random.choice(Actions))
         action_index=Actions.index(np.random.choice(Actions))
+        # print("actions:",action_index)
     else:
         action_index=np.argmax(actions)
-    print(action_index)
+        # print(actions)
+    # print(action_index)
+
+    # print(Actions[action_index])
     return action_index
 
 def Get_Reward(S,A):
     A=Actions[A]
     if A=='right':
         if S==Numbers_States-2:
-            S_='termianl'
+            S_='terminal'
             R=1
         else:
             S_=S+1
@@ -63,7 +68,7 @@ def Get_Reward(S,A):
 
 def Update_Env(S,episode,step_counter):
 
-    env_list = ['-']*(Numbers_States-1) + ['T']   # '---------T' our environment
+    env_list = ['-']*(Numbers_States-1) + ['T']
     if S == 'terminal':
         interaction = 'Episode %s: total_steps = %s' % (episode+1, step_counter)
         print('\r{}'.format(interaction), end='')
@@ -77,7 +82,31 @@ def Update_Env(S,episode,step_counter):
 
 if __name__=='__main__':
     Q_table=build_Q_table(Numbers_States,len(Actions))
+    #
+    # Q_table[0][1]=0.2
+    # print(Q_table)
+    for epsilon in range(Max_Episodes):
+        step_counter=0
+        S=0
+        is_done=False
+        Update_Env(S,epsilon,step_counter)
+        while not is_done:
+            # print("s:",S)
+            A=choose_action(S,Q_table)
+            # print("A:",A)
+            S_,R=Get_Reward(S,A)
+            predict=Q_table[S,A]
+            if S_ != 'terminal':
 
-    Q_table[0][1]=0.2
-    print(Q_table)
-    choose_action(0,Q_table)
+                a=Lambda * Q_table[int(S_), :].max()
+                # print(a)
+                q_target = R + a
+            else:
+                q_target = R
+                is_done = True
+            Q_table[S][A]+=Alpha*(q_target-predict)
+            # print('\r',Q_table,end='',flush=True)
+            S=S_
+            Update_Env(S,epsilon,step_counter+1)
+
+    # S_
