@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c3e067e-f032-4ca6-bccb-893f36281acc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DQN/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/DQN.py" afterDir="false" />
-    </list>
+    <list default="true" id="2c3e067e-f032-4ca6-bccb-893f36281acc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +24,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Gym_learning/DQN1.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="365">
@@ -34,6 +32,18 @@
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="176">
+                    <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -137,8 +147,8 @@
       <find>params</find>
       <find>load</find>
       <find>self.memory_size</find>
-      <find>gamma</find>
       <find>detach</find>
+      <find>gamma</find>
     </findStrings>
     <replaceStrings>
       <replace>10</replace>
@@ -197,6 +207,10 @@
               <item name="RL_exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="RL_exercises" type="462c0819:PsiDirectoryNode" />
               <item name="Gym_learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RL_exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -397,11 +411,11 @@
     <frame x="0" y="23" width="1920" height="991" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4884106" visible="true" weight="0.08267509" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4884106" visible="true" weight="0.08267509" />
       <window_info id="Structure" order="1" sideWeight="0.5115894" side_tool="true" weight="0.19273302" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.12124583" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.12124583" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30367073" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40378198" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -443,16 +457,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="176">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Q-Learning/process_bar_exerices.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -731,6 +735,16 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="176">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

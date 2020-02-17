@@ -8,9 +8,11 @@ The difference between his and mine is the framework, I used the Pytroch instead
 
 [1. Q_Learning](https://github.com/xuejieshougeji0826/Implementation-of-Morvan-Reinforcement-Learning-Teaching-in-Pytorch/tree/master/Q-Learning)
 
+[2.DQN](https://github.com/xuejieshougeji0826/Implementation-of-Morvan-Reinforcement-Learning-Teaching-in-Pytorch/tree/master/DQN)
 
 
 
-The repsotory is stilling updating, I will try my best to finsih this work soon.  
+
+The repsitory is stilling updating, I will try my best to finsih this work soon.  
 
 
