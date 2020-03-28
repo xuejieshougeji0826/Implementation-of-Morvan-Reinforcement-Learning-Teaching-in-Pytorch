@@ -10,7 +10,9 @@ The difference between his and mine is the framework, I used the Pytroch instead
 
 [2.DQN](https://github.com/xuejieshougeji0826/Implementation-of-Morvan-Reinforcement-Learning-Teaching-in-Pytorch/tree/master/DQN)
 
+[3.Policy_Gradient](https://github.com/xuejieshougeji0826/Implementation-of-Morvan-Reinforcement-Learning-Teaching-in-Pytorch/tree/master/Policy_Gradient)
 
+[4.Actor_Critic](https://github.com/xuejieshougeji0826/Implementation-of-Morvan-Reinforcement-Learning-Teaching-in-Pytorch/tree/master/Actor_Critic)
 
 
 The repsitory is stilling updating, I will try my best to finsih this work soon.  

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c3e067e-f032-4ca6-bccb-893f36281acc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2c3e067e-f032-4ca6-bccb-893f36281acc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,16 +220,6 @@
             <path>
               <item name="RL_exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="RL_exercises" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL_exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL_exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="Gym_learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL_exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL_exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="Policy_Gradient" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
